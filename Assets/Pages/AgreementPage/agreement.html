@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Agreement</title>
+    <link rel="stylesheet" href="agreement.css" />
+    <link rel="stylesheet" href="../../Css/main.css" />
+  </head>
+  <body>
+    <div class="agreement-page">
+      <h2>Auction Agreement Summary</h2>
+
+      <div class="agreement-details">
+        <div class="payment-options">
+          <h3>Payment Options</h3>
+          <form>
+            <label>
+              <input
+                type="radio"
+                name="payment-method"
+                value="cash-on-delivery"
+                checked
+              />
+              Cash on Delivery
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="payment-method"
+                value="gpay"
+                class="paymentEls"
+              />
+              Google Pay
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="payment-method"
+                value="paytm"
+                class="paymentEls"
+              />
+              Paytm
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="payment-method"
+                value="debit-card"
+                class="paymentEls"
+              />
+              Debit Card
+            </label>
+          </form>
+        </div>
+
+        <div class="action-buttons">
+          <button class="btn-confirm">Confirm Agreement</button>
+          <button class="btn-cancel">Cancel Agreement</button>
+        </div>
+      </div>
+    </div>
+    <script src="../../Js/auctionSystem.js"></script>
+    <script src="./../../Js/validateLogin.js"></script>
+
+    <script src="agreement.js"></script>
+  </body>
+</html>

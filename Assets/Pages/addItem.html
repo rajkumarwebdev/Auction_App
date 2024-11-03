@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add item</title>
+    <link rel="stylesheet" href="../Css/sellerPage.css" />
+    <link rel="stylesheet" href="../Css/main.css" />
+    <link rel="stylesheet" href="AgreementPage/notifications.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Seller Dashboard</div>
+      <div class="links">
+        <div class="link add-item">
+          <a href="myBikes.html">Garage</a>
+        </div>
+        <div class="link add-item active" id="add-item">
+          <a href="addItem.html"> Add bike</a>
+        </div>
+        <div class="link">
+          <a href="createAuction.html"> Create Auction</a>
+        </div>
+        <div class="link">
+          <a href="activeAuctions.html">Active Auctions</a>
+        </div>
+        <div class="link">
+          <a href="./AuctionHistory/auctionHistoryForSeller.html"
+            >Auctions history</a
+          >
+        </div>
+        <div class="link notify">
+          <a href="AgreementPage/notificationForSeller.html"
+            ><img src="../Images/bell(2).png" alt="Notifications"
+          /></a>
+          <div class="redDot"></div>
+        </div>
+        <div class="link logoutBtn">Logout</div>
+      </div>
+    </header>
+
+    <main id="main-section">
+      <h1 class="form-headings">Bike Information</h1>
+      <section id="add-bike">
+        <div class="form">
+          <div class="form-group">
+            <label for="#">Name</label>
+            <select name="" id="bikeNames" class="inputBox"></select>
+            <p class="err_name er" id="err_name"></p>
+          </div>
+          <div class="form-group">
+            <label for="#">Brand</label>
+            <input type="text" class="inputBox" id="brandIpt" disabled />
+          </div>
+          <div class="form-group">
+            <label for="#">Model</label>
+            <input type="text" class="inputBox" id="modelIpt" disabled />
+          </div>
+          <div class="form-group">
+            <label for="#">Year</label>
+            <input type="text" class="inputBox" id="yearIpt" disabled />
+          </div>
+          <div class="form-group">
+            <label for="#">EngineCapacity</label>
+            <input
+              type="text"
+              class="inputBox"
+              id="EngineCapacityIpt"
+              disabled
+            />
+          </div>
+          <div class="form-group">
+            <label for="#">State</label>
+            <select name="" id="state" class="inputBox"></select>
+            <p class="err_state er" id="err_state"></p>
+          </div>
+          <div class="form-group">
+            <label for="#">City</label>
+            <select name="" id="district" class="inputBox"></select>
+            <p class="err_city er" id="err_city"></p>
+          </div>
+          <div class="form-group">
+            <label for="#">Owner history</label>
+            <input type="text" class="inputBox" id="owner" />
+            <p class="err_owner er" id="err_owner"></p>
+          </div>
+          <div class="form-group">
+            <label for="imageURL">Image</label>
+            <div id="imagePreview">
+              <div class="loading-spinner" id="loading-spinner"></div>
+            </div>
+            <input type="file" accept="image/*" id="image_url_bike" />
+            <p class="err_image er" id="err_image"></p>
+          </div>
+          <button class="btn" id="add-bike-btn">Add</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="../Js/validateLogin.js"></script>
+    <script src="../Js/seller.js"></script>
+    <script src="../Js/auctionSystem.js"></script>
+    <script src="../Js/displayError.js"></script>
+    <script src="../Js/Item.js"></script>
+    <script src="../Js/ItemManager.js"></script>
+    <script src="../Js/logout.js"></script>
+    <script src="../Js/checkNotication.js"></script>
+  </body>
+</html>

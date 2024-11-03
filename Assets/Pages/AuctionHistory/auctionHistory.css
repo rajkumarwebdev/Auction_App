@@ -1,0 +1,88 @@
+:root {
+  --primary-color: #388fc7;
+  --secondary-color: #60a5d2;
+  --completed-color: #4caf50;
+  --pending-color: #ffa726;
+  --rejected-color: #e57373;
+  --expired-color: #b0b0b0;
+}
+
+.auctions-history-page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.auctions-history-page h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.auction-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+
+.auction-info {
+  display: flex;
+  align-items: center;
+}
+
+.bike-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-right: 15px;
+  object-fit: cover;
+  border: 2px solid var(--secondary-color);
+}
+
+.details h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.details p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.status {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.status.Completed {
+  background-color: var(--completed-color);
+}
+
+.status.Pending {
+  background-color: var(--pending-color);
+}
+
+.status.Rejected {
+  background-color: var(--rejected-color);
+}
+
+.status.Expired {
+  background-color: var(--expired-color);
+}
+.image-holder img {
+  object-fit: contain;
+}

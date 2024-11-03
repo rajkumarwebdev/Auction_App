@@ -1,0 +1,82 @@
+:root {
+  --primary-color: #388fc7;
+  --secondary-color: #60a5d2;
+}
+.registration-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 500px;
+  padding: 0.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.input {
+  padding: 1rem;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid grey;
+  outline: 1px solid var(--primary-color);
+}
+
+.registerBtn {
+  padding: 1rem;
+  font-size: 18px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border: 2px solid var(--secondary-color);
+  background-color: #388fc7;
+  color: #fff;
+  margin-top: 1.5rem;
+}
+
+.heading-reg {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.selection {
+  font-weight: 300;
+}
+.label-reg {
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-weight: 500;
+}
+.reg-error {
+  display: none;
+  color: orangered;
+}
+.reg-err {
+  display: block;
+}
+
+.linkToLogin {
+  text-align: right;
+}
+.login-link {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.linkToLogin {
+  color: var(--primary-color);
+}
+
+/* .required-reg::after {
+  content: "*";
+  font-size: 17px;
+  color: orangered;
+} */

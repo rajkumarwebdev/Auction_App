@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>History</title>
+    <link rel="stylesheet" href="../../Css/sellerPage.css" />
+    <link rel="stylesheet" href="../../Css/main.css" />
+    <link rel="stylesheet" href="./auctionHistory.css" />
+    <link rel="stylesheet" href="../AgreementPage/notifications.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Buyer Dashboard</div>
+      <div class="links">
+        <div class="link add-item">
+          <a href="../BuyersModule/buyersDashboard.html">Home</a>
+        </div>
+        <div class="link add-item" id="add-item">
+          <a href="../BuyersModule/Auctions/auctions.html">Auctions</a>
+        </div>
+        <div class="link">
+          <a href="../BuyersModule/MyBids/mybids.html"> My bids</a>
+        </div>
+        <div class="link active">
+          <a href="auctionHistoryForBuyer.html">Auctions history</a>
+        </div>
+
+        <div class="link notify">
+          <a href="../AgreementPage/notifications.html"
+            ><img src="../../Images/bell(2).png" alt="Notifications"
+          /></a>
+          <div class="redDot"></div>
+        </div>
+
+        <div class="link logoutBtn">Logout</div>
+      </div>
+    </header>
+    <div class="loading-spinner center show" id="loading-spinner"></div>
+    <div class="auctions-history-page">
+      <h2>Auction History</h2>
+    </div>
+    <script src="../../Js/loader.js"></script>
+    <script src="../../Js/validateLogin.js"></script>
+    <script src="../../Js/seller.js"></script>
+    <script src="../../Js/checkNotication.js"></script>
+    <script src="../../Js/auctionSystem.js"></script>
+    <script src="../../Js/displayError.js"></script>
+    <script src="../../Js/displayMessage.js"></script>
+    <script src="../../Js/logout.js"></script>
+
+    <script src="./buyerAuctionHistory.js"></script>
+  </body>
+</html>

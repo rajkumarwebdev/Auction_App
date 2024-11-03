@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auctions</title>
+    <link rel="stylesheet" href="../../../Css/sellerPage.css" />
+    <link rel="stylesheet" href="../../../Css/main.css" />
+    <link rel="stylesheet" href="auction.css" />
+    <link rel="stylesheet" href="../../AgreementPage/notifications.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Buyer Dashboard</div>
+      <div class="links">
+        <div class="link add-item">
+          <a href="../buyersDashboard.html">Home</a>
+        </div>
+        <div class="link add-item active" id="add-item">
+          <a href="auctions.html">Auctions</a>
+        </div>
+        <div class="link">
+          <a href="../MyBids/mybids.html"> My bids</a>
+        </div>
+        <div class="link">
+          <a href="../../AuctionHistory/auctionHistoryForBuyer.html"
+            >Auctions history</a
+          >
+        </div>
+        <div class="link notify">
+          <a href="../../AgreementPage/notifications.html"
+            ><img src="../../../Images/bell(2).png" alt="Notifications"
+          /></a>
+          <div class="redDot"></div>
+        </div>
+
+        <div class="link logoutBtn">Logout</div>
+      </div>
+    </header>
+    <div class="loading-spinner center show top" id="loading-spinner"></div>
+    <div class="container">
+      <div class="search-filter-bar">
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Search for bike..."
+            id="searchByBikeName"
+          />
+        </div>
+        <div class="filters">
+          <select class="inputBox" id="brandNames"></select>
+
+          <select name="" id="state" class="inputBox"></select>
+          <p class="err_state er" id="err_state"></p>
+
+          <select name="" id="district" class="inputBox">
+            <option value="null" selected disabled>Choose city</option>
+          </select>
+          <p class="err_city er" id="err_city"></p>
+        </div>
+        <div class="sort-options">
+          <select class="inputBox" id="sortingInput">
+            <option selected disabled>Sort By</option>
+            <option value="highest rate">Price: Highest first</option>
+            <option value="lowest rate">Price: Lowest first</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="filterResults" id="filterResults">
+        Results for ' <span id="filter-result"></span>'
+      </div>
+      <div class="auction-listings" id="auctionListings"></div>
+    </div>
+    <script src="../../../Js/loader.js"></script>
+    <script src="../../../Js/validateLogin.js"></script>
+    <script src="../../../Js/auctionSystem.js"></script>
+    <script src="../../../Js/displayError.js"></script>
+    <script src="../../../Js/Item.js"></script>
+    <script src="../../../Js/logout.js"></script>
+    <script src="auctions.js"></script>
+    <script src="../../../Js/countExprShow.js"></script>
+    <script src="../../../Js/updateWinner.js"></script>
+    <script src="../../../Js/displayMessage.js"></script>
+    <script src="../../../Js/checkNotication.js"></script>
+  </body>
+</html>

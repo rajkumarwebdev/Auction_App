@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bids</title>
+    <link rel="stylesheet" href="../../../Css/sellerPage.css" />
+    <link rel="stylesheet" href="../../../Css/main.css" />
+    <link rel="stylesheet" href="mybids.css" />
+    <link rel="stylesheet" href="../../AgreementPage/notifications.css" />
+  </head>
+  <body class="bidBody">
+    <header>
+      <div class="logo">Buyer Dashboard</div>
+      <div class="links">
+        <div class="link add-item">
+          <a href="../buyersDashboard.html">Home</a>
+        </div>
+        <div class="link add-item" id="add-item">
+          <a href="../Auctions/auctions.html">Auctions</a>
+        </div>
+        <div class="link active">
+          <a href="mybids.html"> My bids</a>
+        </div>
+        <div class="link">
+          <a href="../../AuctionHistory/auctionHistoryForBuyer.html"
+            >Auctions history</a
+          >
+        </div>
+        <div class="link notify">
+          <a href="../../AgreementPage/notifications.html"
+            ><img src="../../../Images/bell(2).png" alt="Notifications"
+          /></a>
+          <div class="redDot"></div>
+        </div>
+
+        <div class="link logoutBtn">Logout</div>
+      </div>
+    </header>
+    <div class="bid-details-container">
+      <div class="title">Bid Details</div>
+
+      <div class="section">
+        <div class="info-item">
+          <span>Bike Model</span><span id="bikeModel">--</span>
+        </div>
+        <div class="info-item">
+          <span>Year</span><span id="bikeYear">--</span>
+        </div>
+        <div class="info-item">
+          <span>Engine Capacity</span><span id="bikeEngine">--</span>
+        </div>
+        <div class="info-item">
+          <span>Current Highest Bid</span
+          ><span id="bikeCurentHighestBid">--</span>
+        </div>
+        <div class="info-item">
+          <span>Your last Bid</span><span id="lastBid">--</span>
+        </div>
+        <div class="info-item">
+          <span>Next minimum Bid</span><span id="nextMinBid">--</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="info-item">
+          <span>Bid</span>
+          <div class="input-section">
+            <input
+              type="number"
+              class="bid-input"
+              placeholder="Enter your bid amount"
+              min="0"
+              id="bid-input"
+            />
+          </div>
+        </div>
+        <button class="place-bid-button" id="place-bid-button">
+          Place Bid
+        </button>
+      </div>
+
+      <div class="section newSection" id="newSection">
+        <div class="small-title">Active Bids</div>
+      </div>
+    </div>
+
+    <script src="../../../Js/validateLogin.js"></script>
+    <script src="../../../Js/auctionSystem.js"></script>
+    <script src="../../../Js/displayError.js"></script>
+    <script src="../../../Js/Item.js"></script>
+    <script src="mybids.js"></script>
+    <script src="../../../Js/logout.js"></script>
+    <script src="bid.js"></script>
+    <script src="../../../Js/checkNotication.js"></script>
+    <script src="../../../Js/displayMessage.js"></script>
+  </body>
+</html>

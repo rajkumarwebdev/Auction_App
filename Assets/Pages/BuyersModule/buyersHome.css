@@ -1,0 +1,175 @@
+.banner {
+  background-image: url("../../Images/auctionBanner.jpg"); /* Replace with your banner image */
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.banner h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.banner p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #ff8800;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #ff6600;
+}
+
+.featured-auctions {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.featured-auctions h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.auction-card {
+  background-color: #fff;
+  border-radius: 8px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  position: relative;
+}
+
+.auction-card:hover {
+  transform: translateY(-5px);
+}
+
+.auction-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.auction-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.auction-info h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.auction-info p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.bid-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #ff8800;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.bid-btn:hover {
+  background-color: #ff6600;
+}
+
+.auctionTag {
+  background-color: #ddffdd;
+  color: #008000 !important;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: 30;
+  border-radius: 8px;
+  padding: 3px;
+  animation: glow 1s linear infinite alternate;
+  overflow: hidden;
+}
+.auctionTag::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: #ffffffe0;
+  position: absolute;
+  z-index: 40;
+  animation: flow 1.2s linear infinite alternate;
+}
+
+@keyframes flow {
+  0% {
+    transform: translateX(-200px) rotate(45deg);
+    box-shadow: 0px 0px 20px #fff, 0px 0px 20px #fff, 0px 0px 20px #fff,
+      0px 0px 20px #fff, 0px 0px 20px #fff;
+  }
+  100% {
+    transform: translateX(300px) rotate(45deg);
+  }
+}
+@keyframes glow {
+  0% {
+    filter: drop-shadow(1px 1px 10px #008000);
+  }
+  50% {
+    filter: drop-shadow(2px 2px 15px #008000);
+  }
+  100% {
+    filter: drop-shadow(3px 3px 18px #008000);
+  }
+}

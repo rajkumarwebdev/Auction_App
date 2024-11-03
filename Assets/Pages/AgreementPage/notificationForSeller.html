@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notifications</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="notifications.css" />
+    <link rel="stylesheet" href="../../Css/main.css" />
+    <link rel="stylesheet" href="../../Css/sellerPage.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Seller Dashboard</div>
+      <div class="links">
+        <div class="link add-item">
+          <a href="../myBikes.html">Garage</a>
+        </div>
+        <div class="link add-item" id="add-item">
+          <a href="../addItem.html"> Add bike</a>
+        </div>
+        <div class="link">
+          <a href="../createAuction.html"> Create Auction</a>
+        </div>
+        <div class="link">
+          <a href="../activeAuctions.html">Active Auctions</a>
+        </div>
+        <div class="link">
+          <a href="../AuctionHistory/auctionHistoryForSeller.html"
+            >Auctions history</a
+          >
+        </div>
+        <div class="link notify active">
+          <a href="./notificationForSeller.html"
+            ><img src="../../Images/bell(2).png" alt="Notifications"
+          /></a>
+          <div class="redDot"></div>
+        </div>
+        <div class="link logoutBtn">Logout</div>
+      </div>
+    </header>
+    <div class="loading-spinner center show" id="loading-spinner"></div>
+    <div class="notifications-container">
+      <h2>Notifications</h2>
+    </div>
+    <script src="../../Js/loader.js"></script>
+    <script src="../../Js/logout.js"></script>
+    <script src="../../Js/validateLogin.js"></script>
+    <script src="../../Js/auctionSystem.js"></script>
+    <script src="../../Js/displayMessage.js"></script>
+    <script src="renderNotifications.js"></script>
+    <script src="../../Js/checkNotication.js"></script>
+  </body>
+</html>

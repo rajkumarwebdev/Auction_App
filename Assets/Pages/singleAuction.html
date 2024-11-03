@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auction</title>
+    <link rel="stylesheet" href="../Css/singleAuction.css" />
+    <link rel="stylesheet" href="../Css/main.css" />
+  </head>
+  <body>
+    <div class="single-auction-container">
+      <button class="back-button" onclick="goBack()">
+        ← Back to Active Auctions
+      </button>
+      <div class="bidding-history">
+        <h2>Bid History</h2>
+        <div class="bid-list" id="bid-list">
+          <div class="no-bids-message" id="no-bids-message">
+            <p>No bids have been placed for this auction yet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../Js/auctionSystem.js   "></script>
+  <script src="../Js/validateLogin.js"></script>
+  <script src="../Js/singleAuction.js"></script>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seller Page</title>
+    <link rel="stylesheet" href="../Css/sellerPage.css" />
+    <link rel="stylesheet" href="../Css/main.css" />
+    <link rel="stylesheet" href="../Css/myBikes.css" />
+    <link rel="stylesheet" href="AgreementPage/notifications.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Seller Dashboard</div>
+      <div class="links">
+        <div class="link add-item active">
+          <a href="myBikes.html">Garage</a>
+        </div>
+        <div class="link add-item" id="add-item">
+          <a href="addItem.html"> Add bike</a>
+        </div>
+        <div class="link">
+          <a href="createAuction.html"> Create Auction</a>
+        </div>
+        <div class="link">
+          <a href="activeAuctions.html">Active Auctions</a>
+        </div>
+        <div class="link">
+          <a href="./AuctionHistory/auctionHistoryForSeller.html"
+            >Auctions history</a
+          >
+        </div>
+
+        <div class="link notify">
+          <a href="AgreementPage/notificationForSeller.html"
+            ><img src="../Images/bell(2).png" alt="Notifications"
+          /></a>
+          <div class="redDot"></div>
+        </div>
+        <div class="link logoutBtn">Logout</div>
+      </div>
+    </header>
+
+    <main id="main-section">
+      <div class="filter bikeFilterSection">
+        <div class="filter-group">
+          <div class="filter-label">Auction status</div>
+          <div class="filter-group-row">
+            <input type="radio" name="auction_status" id="all_bikes" checked />
+            <label for="all_bikes" class="filter-elemenet-label">All</label>
+          </div>
+          <div class="filter-group-row">
+            <input type="radio" name="auction_status" id="in_auction" />
+            <label for="in_auction" class="filter-elemenet-label"
+              >In auction</label
+            >
+          </div>
+          <div class="filter-group-row">
+            <input type="radio" name="auction_status" id="not_in_auction" />
+            <label for="not_in_auction" class="filter-elemenet-label"
+              >Not in auction</label
+            >
+          </div>
+        </div>
+        <div class="filter-group">
+          <div class="filter-label">Bike status</div>
+          <!-- <div class="filter-group-row">
+            <input type="radio" name="auction_status" id="all_bikes" checked />
+            <label for="all_bikes" class="filter-elemenet-label">All</label>
+          </div> -->
+          <div class="filter-group-row">
+            <label for="by_owner" class="filter-elemenet-label-new"
+              >Owners</label
+            >
+            <input type="number" name="bike_status" id="by_owner" />
+          </div>
+          <div class="filter-group-row">
+            <label for="by_condition" class="filter-elemenet-label-new"
+              >Brand</label
+            >
+            <select name="" id="by_brandName" class="byCondition">
+              <option value="" disabled selected>Select an option</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="bike-list" id="bikes"></div>
+      <div class="loading-spinner center show" id="loading-spinner"></div>
+    </main>
+    <script src="../Js/loader.js"></script>
+    <script src="../Js/validateLogin.js"></script>
+    <script src="../Js/seller.js"></script>
+    <script src="../Js/auctionSystem.js"></script>
+    <script src="../Js/displayError.js"></script>
+    <script src="../Js/displayMessage.js"></script>
+    <script src="../Js/bikesShow.js"></script>
+    <script src="../Js/logout.js"></script>
+    <script src="../Js/checkNotication.js"></script>
+  </body>
+</html>

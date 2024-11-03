@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="../Css/form.css" />
+    <link rel="stylesheet" href="../Css/main.css" />
+  </head>
+  <body>
+    <div class="registration-container">
+      <h1 class="heading-reg">Registration</h1>
+      <div class="form-group">
+        <label for="username" class="label-reg required-reg">Username</label>
+        <input type="text" placeholder="Username" id="username" class="input" />
+        <p class="reg-error" id="err_username"></p>
+      </div>
+      <div class="form-group">
+        <label for="email" class="label-reg required-reg">Email</label>
+        <input type="email" placeholder="Email" id="email" class="input" />
+        <p class="reg-error" id="err_email"></p>
+      </div>
+      <div class="form-group">
+        <label for="number" class="label-reg required-reg">Mobile number</label>
+        <input
+          type="text"
+          placeholder="Mobile Number"
+          id="number"
+          class="input"
+        />
+        <p class="reg-error" id="err_number"></p>
+      </div>
+      <div class="form-group">
+        <label for="role" class="label-reg required-reg">Role</label>
+        <select name="role" id="role" class="input selection">
+          <option value="" disabled selected>Select an option</option>
+          <option value="seller">Seller</option>
+          <option value="buyer">Buyer</option>
+        </select>
+        <p class="reg-error" id="err_role"></p>
+      </div>
+      <div class="form-group">
+        <label for="password" class="label-reg required-reg">Password</label>
+        <input
+          type="password"
+          placeholder="Password"
+          id="password"
+          class="input"
+        />
+        <p class="reg-error" id="err_password"></p>
+      </div>
+      <div class="form-group">
+        <label for="cfmpassword" class="label-reg required-reg"
+          >Confirm Password</label
+        >
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          id="cfmpassword"
+          class="input"
+        />
+        <p class="reg-error" id="err_cfmpassword"></p>
+      </div>
+      <button class="registerBtn" id="registerBtn">Register</button>
+      <p class="linkToLogin">
+        Already have an account ?<a href="login.html" class="login-link"
+          >Login</a
+        >
+      </p>
+    </div>
+    <script src="../Js/registration.js"></script>
+    <script src="../Js/User.js"></script>
+    <script src="../Js/displayError.js"></script>
+    <script src="../Js/auctionSystem.js"></script>
+  </body>
+</html>
